@@ -1,0 +1,16 @@
+<div class="container text-center full-screen-div">
+    <div class="row align-items-center full-screen-div">
+        <div class="col">
+            <h1>Welcome</h1>
+            <h2>Please enter your name to continue</h2>
+            <form [formGroup]="nameForm" (ngSubmit)="onSubmit()">
+                <p>
+                    <input type="text" formControlName="name" id="nameField" class="form-control-lg" placeholder="Name">
+                </p>
+                <p>
+                    <button type="submit" [disabled]="!nameForm.valid" class="btn btn-primary">Submit</button>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
