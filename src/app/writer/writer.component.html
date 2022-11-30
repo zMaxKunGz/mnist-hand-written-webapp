@@ -1,1 +1,13 @@
-<p>writer works!</p>
+<div class="container text-center full-screen-div">
+    <div class="row align-items-center full-screen-div">
+        <div class="col">
+            <h1>Welcome {{name}}</h1>
+            <h2>Draw number and press submit</h2>
+            <div class="row">
+                <app-drawing-canvas [buttonEvents]="onButtonClickSubject.asObservable()" (predictedEvents)="onPredict($event)"></app-drawing-canvas>
+            </div>
+            <button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+            <button class="btn btn-secondary" (click)="onClear()" style="margin-left: 20px;">Clear</button>
+        </div>
+    </div>
+</div>

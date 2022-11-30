@@ -7,18 +7,22 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { WriterComponent } from './writer/writer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DrawingCanvasComponent } from './drawing-canvas/drawing-canvas.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
-    WriterComponent
+    WriterComponent,
+    DrawingCanvasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
